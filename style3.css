@@ -165,7 +165,12 @@ footer
 
 @media (max-width: 500px)
 {
-    header p
+    header
+    {
+        position:relative;
+    }
+
+    header a
     {
         display: block;
         margin: 0;
