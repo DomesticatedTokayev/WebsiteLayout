@@ -1,0 +1,222 @@
+body
+{
+    background: lightgray;
+    margin: 0;
+}
+
+header
+{
+    background-color: grey;
+    text-align: center;
+    position:sticky; /* Use this and next line to keep header stuck on screen when scrolling*/
+    top:0;
+    width: 100%;
+
+
+}
+
+header h1
+{
+    font-size: 3rem;
+    padding-top: 50px;
+    margin-top: 0;
+    padding: 30px;
+}
+
+header a
+{
+    display: inline-flex;
+    /* margin: 0px 10px 0px 10px; */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+    color: lightgrey;
+    text-decoration: none;
+}
+
+header a:hover
+{
+    color: white;
+    text-decoration: underline;
+}
+
+
+main
+{
+    /* padding-top: 180px; */
+    max-width: 1200px;
+    margin: auto;
+    background-color: aliceblue;
+}
+
+.main-container
+{
+    display: inline-block;
+    padding: 0px 10px 20px 10px
+}
+
+.couple-img
+{
+    float: left;
+    width: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.family-img
+{
+    float: right;
+    width: 50%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+h3
+{
+    font-size: 1.7rem;
+}
+
+.drums_title
+{
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+footer
+{
+    background-color: grey;
+}
+
+.footer-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+
+.card
+{
+    text-align: center;
+}
+
+.footer-legal
+{
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.drum_set
+{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.drum
+{
+    border: 5px solid;
+    width: 150px;
+    height: 150px;
+    margin: 3px;
+    font-size: 2rem;
+}
+
+.pressed
+{
+    box-shadow: 0 3px 4px 0 #DBEDF3;
+    opacity: 0.5;
+}
+
+.a
+{
+    background-image: url(./images/crash.png);
+}
+.s
+{
+    background-image: url(./images/kick.png);
+}
+.d
+{
+    background-image: url(./images/snare.png);
+}
+.f
+{
+    background-image: url(./images/tom1.png);
+}
+.g
+{
+    background-image: url(./images/tom2.png);
+}
+.h
+{
+    background-image: url(./images/tom3.png);
+}
+.j
+{
+    background-image: url(./images/tom4.png);
+}
+
+
+@media (max-width: 500px)
+{
+    header p
+    {
+        display: block;
+        margin: 0;
+    }
+
+    .footer-container
+    {
+        display: block;
+
+    }
+
+}
+
+@media (max-width: 850px)
+{
+    main
+    {
+        display: block;
+    }
+
+    .couple-img
+    {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    .family-img
+    {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+}
+
+@media (max-width: 800px)
+{
+    .drum
+    {
+        width: 75px;
+        height: 75px;
+        background-size: 150%;
+    }
+
+    .drum_set
+    {
+        padding-bottom: 0;
+
+    }
+}
